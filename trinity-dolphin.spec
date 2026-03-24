@@ -21,7 +21,7 @@
 
 Name:			trinity-%{tde_pkg}
 Version:		0.9.2
-Release:		%{?tde_version:%{tde_version}_}4
+Release:		%{?tde_version:%{tde_version}_}5
 Summary:		File manager for TDE focusing on usability
 Group:			Applications/Utilities
 URL:			http://www.trinitydesktop.org/
@@ -44,7 +44,6 @@ BuildOption:    -DWITH_GCC_VISIBILITY=%{!?with_clang:ON}%{?with_clang:OFF}
 
 BuildRequires:	trinity-tdelibs-devel >= %{tde_version}
 BuildRequires:	trinity-tdebase-devel >= %{tde_version}
-BuildRequires:  tqt3-dev-tools
 
 BuildRequires:	desktop-file-utils
 
